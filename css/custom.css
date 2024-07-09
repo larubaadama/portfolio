@@ -208,3 +208,16 @@ video {
 .nav_fix {
   margin-right: -33px !important;
 }
+
+.badge-image {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.badge-container {
+  text-align: center;
+}
