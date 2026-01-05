@@ -1,14 +1,3 @@
-/*
-
-Style   : MobApp Script JS
-Version : 1.0
-Author  : Surjith S M
-Author  : Adama Laruba
-URI     : https://surjithctly.in/
-
-Copyright © All rights Reserved 
-
-*/
 
 $(function () {
     "use strict";
@@ -115,35 +104,7 @@ $(function () {
             }
         }
     });
-    // var $testimonialsDiv = $('.testimonials');
-    // if ($testimonialsDiv.length && $.fn.owlCarousel) {
-    //     $testimonialsDiv.owlCarousel({
-    //         items: 1,
-    //         nav: true,
-    //         dots: false,
-    //         navText: ['<span class="ti-arrow-left"></span>', '<span class="ti-arrow-right"></span>']
-    //     });
-    // }
-
-    // var $galleryDiv = $('.img-gallery');
-    // if ($galleryDiv.length && $.fn.owlCarousel) {
-    //     $galleryDiv.owlCarousel({
-    //         nav: false,
-    //         center: true,
-    //         loop: true,
-    //         autoplay: true,
-    //         dots: true,
-    //         navText: ['<span class="ti-arrow-left"></span>', '<span class="ti-arrow-right"></span>'],
-    //         responsive: {
-    //             0: {
-    //                 items: 1
-    //             },
-    //             768: {
-    //                 items: 3
-    //             }
-    //         }
-    //     });
-    // }
+    
 
 }); /* End Fn */
 
@@ -155,3 +116,10 @@ $('.question-and-answer').click(function () {
 
 // Intialize AOS
 AOS.init();
+
+document.addEventListener('DOMContentLoaded', function () {
+    var yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
